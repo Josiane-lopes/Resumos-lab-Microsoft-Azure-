@@ -1,4 +1,4 @@
-# -resumo1-lab-Microsoft-Azure
+# Resumos lab-Microsoft-Azure (resumo 1)
 "Este repositório contém o resumo das lições aprendidas durante o desenvolvimento do lab na DIO. Microsoft Azure - Localizando serviços por categoria".
 
 Introdução aos conceitos básicos do Microsoft Azure 
