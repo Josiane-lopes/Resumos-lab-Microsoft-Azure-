@@ -1,66 +1,14 @@
-# -resumo1-lab-Microsoft-Azure
-"Este repositório contém o resumo das lições aprendidas durante o desenvolvimento do lab na DIO. Microsoft Azure - Localizando serviços por categoria".
+resumo2-do-lab-Criando-maquinas-virtuais-na-Azure
+"Este repositório contém o resumo das lições aprendidas durante o desenvolvimento do lab na DIO - Criando máquinas virtuais na Azure".
 
-Introdução aos conceitos básicos do Microsoft Azure 
+Benefícios da nuvem
 
-Este é um resumo da aula de Introdução aos conceitos básicos do Microsoft Azure ,ministrada pela proferssora Valéria Baptista, nele contém uma explicação breve do significado de computação em nuvem, os tipos de nuvens e as vantagens e desvantagens de cada um dos tipos, responsabilidade compartilhada e uma comparação entre CapEx e OpEx. 
-O que é computação em nuvem
-A computação em nuvem é a entrega de serviços de computação pela Internet, como servidores, armazenamento de dados,banco de dados, rede e software. Esses serviços podem ser rapidamente alocados e liberados com mínimo esforço gerencial ou interação com o provedor de serviços.
-Modelo de responsabilidade compartilhada
-Com o modelo de responsabilidade compartilhada, a responsabilidade com a manutenção e gerenciamento dos serviços são compartilhadas entre o provedor de nuvem e o consumidor. Segurança física, energia, resfriamento e conectividade de rede são responsabilidade do provedor de nuvem já que o consumidor não está na mesma localização física do datacenter.  Ao mesmo tempo, o consumidor é responsável pelos dados e pelas informações armazenados na nuvem e  também é  pela segurança de acesso, o que significa que você só dá acesso àqueles que precisam.
-O modelo de responsabilidade compartilhada está fortemente vinculado aos tipos de serviço de nuvem: IaaS (infraestrutura como serviço), PaaS (plataforma como serviço) e SaaS (software como serviço). 
+⦁ Alta disponibilidade A alta disponibilidade se concentra em garantir a disponibilidade máxima, independentemente de interrupções ou eventos que possam ocorrer. O Azure é um ambiente de nuvem altamente disponível com garantias de tempo de atividade, dependendo do serviço. Essas garantias fazem parte dos SLAs (Contratos de Nível de Serviço). "Um Acordo de Nível de Serviço (SLA) é um contrato formal entre um provedor de serviços e seu cliente que define os parâmetros de qualidade e desempenho esperados para o serviço oferecido. O SLA especifica em detalhes os níveis de serviço acordados, incluindo disponibilidade, tempos de resposta, suporte técnico, entre outros. Seu objetivo é garantir a transparência e o compromisso com a qualidade, alinhando expectativas entre as partes envolvidas". Fonte: https://www.agenciacnow.com/acordo-de-nivel-de-servico-sla/ ⦁ Escalabilidade A escalabilidade refere-se à capacidade de ajustar recursos para atender à demanda. Se você experimentar um pico repentino de tráfego e seus sistemas ficarem sobrecarregados, a capacidade de escalar significa que você poderá adicionar mais recursos para lidar melhor com o aumento da demanda.
 
-Ao usar um provedor de nuvem, você sempre será responsável por:
-⦁	Informações e dados armazenados na nuvem
-⦁	Dispositivos que têm permissão para se conectar à nuvem (telefones celulares, computadores e assim por diante)
-⦁	Contas e identidades das pessoas, serviços e dispositivos em sua organização
-O provedor de nuvem é sempre responsável por:
-⦁	Datacenter físico
-⦁	Rede física
-⦁	Hosts físicos
-Seu modelo de serviço determinará a responsabilidade por coisas como:
-⦁	Sistemas operacionais
-⦁	Controles de rede
-⦁	Aplicativos
-⦁	Identidade e infraestrutura
-Modelos de nuvem
-Os modelos de nuvem definem o tipo de implantação de recursos de nuvem. Os três principais modelos de nuvem são: privado, público e híbrido.
-⦁	Nuvem privada
-Uma nuvem privada é fornece serviços de TI pela Internet usada por uma única entidade. A nuvem privada fornece um controle muito maior para a empresa e o departamento de TI. A nuvem privada pode ser hospedada em seu datacenter local ou em um datacenter dedicado externo, até mesmo por terceiros que tenham dedicado esse datacenter à sua empresa.
-Ela tem mais custos e menos benefícios em relação a uma implantação de nuvem pública. 
+O outro benefício da escalabilidade é que você não está pagando além do necessário pelos serviços. Como a nuvem é um modelo baseado em consumo, você paga apenas pelo que usa. Se a demanda cair, você poderá reduzir seus recursos e, assim, reduzir seus custos. A escala geralmente vem em duas variedades: vertical (escalabilidade) e horizontal (Elasticidade). A escala vertical se concentra em aumentar ou diminuir a capacidade dos recursos. A escala horizontal é adição ou subtração do número de recursos, ex.:adicionar mais CPUs ou RAM à máquina virtual. Com a escala horizontal, se você experimentasse um salto repentino acentuado na demanda, seus recursos implantados poderiam ser expandidos (automaticamente ou manualmente).Ex.: Balck friday ⦁ Confiabilidade Resiliência é a capacidade que um sistema tem de se recuperar de falhas e continuar funcionando. Ela também é um dos pilares do Microsoft Azure Well-Architected Framework. Devido ao design descentralizado, a nuvem naturalmente dá suporte a uma infraestrutura confiável e resiliente. Com recursos implantados em várias regiões do mundo, essa escala global, mesmo que ocorra um evento catastrófico em uma região, as outras regiões ainda estarão em funcionamento. Você pode criar aplicativos para aproveitar automaticamente essa confiabilidade maior. Em alguns casos, o próprio ambiente de nuvem mudará automaticamente para uma região diferente, sem que você precise realizar nenhuma ação. ⦁ Previsibilidade A previsibilidade pode se concentrar na previsibilidade de desempenho (Dimensionamento automático, o balanceamento de carga e a alta disponibilidade são apenas alguns dos conceitos de nuvem que dão suporte à previsibilidade de desempenho. EX.: se o tráfego estiver bem concentrado em uma área, o balanceamento de carga ajudará a redirecionar parte da sobrecarga para áreas menos sobrecarregadas) ou na previsibilidade de custo (A previsibilidade de custos se concentra em prever o custo dos gastos com a nuvem. Você pode até mesmo usar ferramentas como TCO (custo total de propriedade) ou a Calculadora de Preços para obter uma estimativa de possíveis gastos com a nuvem). Tanto a previsibilidade de desempenho quanto a de custo são bastante influenciadas pelo Microsoft Azure Well-Architected Framework. ⦁ Governança Se você estiver implantando infraestrutura como serviço ou software como serviço, os recursos de nuvem vão dar suporte à governança e à conformidade. Itens como modelos de conjunto ajudam a garantir que todos os seus recursos implantados atendam aos padrões corporativos e aos requisitos regulatórios governamentais. Além disso, você pode atualizar todos os seus recursos implantados com novos padrões à medida que os padrões são alterados. A auditoria baseada em nuvem ajuda a sinalizar qualquer recurso que esteja fora de conformidade com seus padrões corporativos e fornece estratégias de mitigação. Dependendo do seu modelo operacional, patches de software e atualizações também podem ser aplicados automaticamente, o que ajuda na governança e na segurança. ⦁ Segurança Em relação à segurança, você pode encontrar uma solução de nuvem que atenda às suas necessidades de segurança. Se você quiser o controle máximo da segurança, a infraestrutura como serviço fornecerá recursos físicos, mas permitirá que você gerencie os sistemas operacionais e o software instalado, incluindo aplicação de patches e manutenção. Se você quiser que a aplicação de patches e a manutenção sejam tratadas automaticamente, as implantações de plataforma como serviço ou software como serviço podem ser as melhores estratégias de nuvem para você. E como a nuvem se destina a uma entrega de recursos de TI via Internet, os provedores de nuvem normalmente são adequados para lidar com situações como ataques de DDoS (negação de serviço distribuído), tornando sua rede mais robusta e segura.
 
-⦁	Nuvem pública
-Uma nuvem pública é criada, controlada e mantida por um provedor de nuvem de terceiros. Com uma nuvem pública, qualquer pessoa que queira comprar serviços de nuvem pode acessar e usar os recursos. A disponibilidade pública geral é uma diferença fundamental entre nuvens públicas e privadas.
+⦁ Capacidade de gerenciamento na nuvem O gerenciamento da nuvem diz respeito a gerenciar seus recursos de nuvem. Na nuvem, você pode: ⦁ Escalar automaticamente a implantação de recursos com base na necessidade. ⦁ Implantar recursos com base em um modelo pré-configurado, removendo a necessidade de configuração manual. ⦁ Monitorar a integridade dos recursos e substituir automaticamente os recursos com falha. ⦁ Receber alertas automáticos com base em métricas configuradas, de modo a ficar ciente do desempenho em tempo real. ⦁ Gerenciamento na nuvem O gerenciamento na nuvem diz respeito à maneira de gerenciar seu ambiente de nuvem e seus recursos. Você pode gerenciá-los: ⦁ Por meio de um portal da Web.(Pré configurado) ⦁ Usando uma interface de linha de comando.(Manual) ⦁ Usando APIs. ⦁ Usando o PowerShell.
 
-⦁	Nuvem híbrida
-Uma nuvem híbrida usa nuvens públicas e privadas em um ambiente interconectado. Um ambiente de nuvem híbrida pode ser usado para permitir que uma nuvem privada escale para atender a uma demanda maior temporária implantando recursos de nuvem pública. A nuvem híbrida pode ser usada para fornecer uma camada adicional de segurança. Por exemplo, os usuários podem escolher com flexibilidade quais serviços manter na nuvem pública e quais implantar na infraestrutura de nuvem privada.
+Fonte: https://learn.microsoft.com/pt-br/training/modules/describe-benefits-use-cloud-services/2-high-availability-scalability-cloud
 
-⦁	Várias nuvens
-Um quarto cenário, é um cenário de várias nuvens. Em um cenário de várias nuvens, você usa vários provedores de nuvem pública. Em um ambiente de várias nuvens, você lida com dois (ou mais) provedores de nuvem pública e gerencia recursos e segurança em ambos os ambientes.
 
-Azure Arc
-O Azure Arc é um conjunto de tecnologias que ajuda a gerenciar seu ambiente de nuvem. O Azure Arc pode ajudar a gerenciar o seu ambiente de nuvem, seja uma nuvem pública exclusivamente no Azure, uma nuvem privada em seu datacenter, uma configuração híbrida ou até mesmo um ambiente de várias nuvens em execução em vários provedores de nuvem ao mesmo tempo.
-Solução VMware no Azure
-Se você já estiver estabelecido com o VMware em um ambiente de nuvem privada, mas quiser migrar para uma nuvem pública ou híbrida a Solução VMware no Azure permite executar suas cargas de trabalho do VMware no Azure com integração e escalabilidade total.
-Modelo baseado em consumo
-Ao comparar modelos de infraestrutura de TI, há dois tipos de despesas a serem consideradas. CapEx (despesas de capital) e OpEx (despesas operacionais).
-⦁	CapEx (despesas de capital) 
-É uma despesa inicial única para comprar ou proteger recursos tangíveis. Um prédio novo, a repavimentação do estacionamento, a construção de um datacenter ou a compra de um veículo da empresa são exemplos de CapEx.
-⦁	OpEx (despesas operacionais)
-É o gasto de capital em serviços ou produtos ao longo do tempo. O aluguel de um centro de convenções, o leasing de um veículo da empresa ou a assinatura de serviços de nuvem são exemplos de OpEx.
-A computação em nuvem se enquadra na OpEx porque opera em um modelo baseado em consumo, você não paga pela infraestrutura física, pela eletricidade, pela segurança nem por nada que esteja associado à manutenção de um datacenter. Você paga pelos recursos de TI que usa. Se você não usar nenhum recurso de TI durante o mês, não pagará nada.
-Benefícios:
-⦁	Sem custos prévios.
-⦁	Não há necessidade de comprar nem gerenciar uma infraestrutura cara que os usuários talvez não usem na capacidade máxima.
-⦁	A capacidade de pagar para obter mais recursos quando necessário.
-⦁	A capacidade de parar de pagar por recursos que não são mais necessários.
-⦁	Com um datacenter tradicional, você tenta estimar as necessidades futuras de recursos. Se você superestimar, gastará mais do que o necessário no datacenter, podendo desperdiçar capital. Se você subestimar, o datacenter atingirá a capacidade rapidamente e os aplicativos e serviços poderão sofrer redução de desempenho. A correção de um datacenter subprovisionado pode ser muito demorada. Pode ser necessário solicitar, receber e instalar mais hardware. Você também precisará adicionar energia, resfriamento e rede para o hardware extra.
-⦁	Comparar os modelos de preços de nuvem
-⦁	Computação em nuvem é a entrega de serviços de computação pela Internet, usando o modelo de preço pago conforme o uso. Normalmente, você paga apenas pelos serviços de nuvem que usa, o que ajuda a:
-⦁	Planeje e gerencie os custos operacionais.
-⦁	Executar a infraestrutura com mais eficiência.
-⦁	Escale as operações de acordo com as necessidades de negócios.
-Em outras palavras, a computação em nuvem é uma forma de alugar capacidade computacional e armazenamento do datacenter de terceiros. Você pode tratar os recursos de nuvem como faria com os recursos em seu próprio datacenter. Mas, ao contrário do seu próprio datacenter, ao terminar de usar os recursos de nuvem, basta devolvê-los. Você é cobrado apenas pelo que usa.
-Em vez de manter CPUs e armazenamento no seu datacenter, você aluga esses recursos pelo tempo necessário. O provedor em nuvem é responsável por manter a infraestrutura subjacente para você. A nuvem permite que você supere rapidamente os desafios empresariais mais difíceis e ofereça soluções de ponta para seus usuários.
-
-Fonte: https://learn.microsoft.com/pt-br/training/modules/describe-cloud-compute/2-introduction-cloud-compute
