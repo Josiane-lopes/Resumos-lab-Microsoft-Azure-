@@ -1,66 +1,10 @@
-# -resumo1-lab-Microsoft-Azure
-"Este repositório contém o resumo das lições aprendidas durante o desenvolvimento do lab na DIO. Microsoft Azure - Localizando serviços por categoria".
+resumo3-do-lab-Configurando-uma-instancia-de-Banco-de-Dados-na-Azure
+"Este repositório contém o resumo das lições aprendidas durante o desenvolvimento do lab na DIO - Configurando uma instância de Banco de Dados na Azure".
 
-Introdução aos conceitos básicos do Microsoft Azure 
+Tipos de serviços de nuvem
 
-Este é um resumo da aula de Introdução aos conceitos básicos do Microsoft Azure ,ministrada pela proferssora Valéria Baptista, nele contém uma explicação breve do significado de computação em nuvem, os tipos de nuvens e as vantagens e desvantagens de cada um dos tipos, responsabilidade compartilhada e uma comparação entre CapEx e OpEx. 
-O que é computação em nuvem
-A computação em nuvem é a entrega de serviços de computação pela Internet, como servidores, armazenamento de dados,banco de dados, rede e software. Esses serviços podem ser rapidamente alocados e liberados com mínimo esforço gerencial ou interação com o provedor de serviços.
-Modelo de responsabilidade compartilhada
-Com o modelo de responsabilidade compartilhada, a responsabilidade com a manutenção e gerenciamento dos serviços são compartilhadas entre o provedor de nuvem e o consumidor. Segurança física, energia, resfriamento e conectividade de rede são responsabilidade do provedor de nuvem já que o consumidor não está na mesma localização física do datacenter.  Ao mesmo tempo, o consumidor é responsável pelos dados e pelas informações armazenados na nuvem e  também é  pela segurança de acesso, o que significa que você só dá acesso àqueles que precisam.
-O modelo de responsabilidade compartilhada está fortemente vinculado aos tipos de serviço de nuvem: IaaS (infraestrutura como serviço), PaaS (plataforma como serviço) e SaaS (software como serviço). 
+⦁ IaaS (infraestrutura como serviço). ⦁ PaaS (plataforma como serviço). ⦁ SaaS (Software como Serviço). IaaS (infraestrutura como serviço) O IaaS (infraestrutura como serviço) é a categoria mais flexível de serviços de nuvem, pois oferece o máximo de controle sobre os recursos de nuvem. Em um modelo de IaaS, o provedor de nuvem é responsável por manter o hardware, a conectividade de rede (com a Internet) e a segurança física. Você é responsável por todo o resto: instalação, configuração e manutenção do sistema operacional; configuração de rede; configuração de banco de dados e armazenamento e assim por diante. Alguns cenários comuns em que o IaaS faz sentido incluem: ⦁ Migração lift-and-shift: Você está configurando recursos de nuvem semelhantes aos do datacenter local e apenas migra os elementos em execução local para execução na infraestrutura IaaS. ⦁ Teste e desenvolvimento: você estabeleceu configurações para ambientes de desenvolvimento e teste que precisa replicar rapidamente. Você pode inicializar ou desativar os diferentes ambientes rapidamente com uma estrutura de IaaS, mantendo o controle completo. PaaS (plataforma como serviço) O PaaS (Plataforma como serviço) é um meio termo entre alugar espaço em um datacenter (infraestrutura como serviço) e pagar uma solução completa e implantada (software como serviço). Em um ambiente de PaaS, o provedor de nuvem mantém a infraestrutura física, a segurança física e a conexão com a Internet. Ele também mantém os sistemas operacionais, o middleware, as ferramentas de desenvolvimento e os serviços de business intelligence que compõem uma solução de nuvem. Em um cenário de PaaS, você não precisa se preocupar com o licenciamento nem com a aplicação de patch em sistemas operacionais e bancos de dados. *Um patch é uma atualização de software que corrige vulnerabilidades, melhora o desempenho ou adiciona novas funcionalidades. Ele pode ser aplicado a sistemas operacionais, bancos de dados e outros softwares. O PaaS é adequado para fornecer um ambiente de desenvolvimento completo sem a preocupação de manter toda a infraestrutura de desenvolvimento. Alguns cenários comuns em que o PaaS faz sentido incluem: ⦁ Estrutura de desenvolvimento: O PaaS fornece uma estrutura que os desenvolvedores podem usar como base para desenvolver ou personalizar aplicativos baseados em nuvem. Semelhante à forma como você cria uma macro do Excel, o PaaS permite aos desenvolvedores criar aplicativos usando componentes de software internos. São incluídos recursos de nuvem, como escalabilidade, alta disponibilidade e a funcionalidade de multilocatário, reduzindo a quantidade de codificação que os desenvolvedores precisam realizar. ⦁ Análise ou business intelligence: as ferramentas fornecidas como serviço com o PaaS permitem que as organizações analisem e minerem dados, encontrando insights e padrões e prevendo resultados para aprimorar a previsão, as decisões de design de produto, o retornos sobre investimentos e outras decisões de negócios.
 
-Ao usar um provedor de nuvem, você sempre será responsável por:
-⦁	Informações e dados armazenados na nuvem
-⦁	Dispositivos que têm permissão para se conectar à nuvem (telefones celulares, computadores e assim por diante)
-⦁	Contas e identidades das pessoas, serviços e dispositivos em sua organização
-O provedor de nuvem é sempre responsável por:
-⦁	Datacenter físico
-⦁	Rede física
-⦁	Hosts físicos
-Seu modelo de serviço determinará a responsabilidade por coisas como:
-⦁	Sistemas operacionais
-⦁	Controles de rede
-⦁	Aplicativos
-⦁	Identidade e infraestrutura
-Modelos de nuvem
-Os modelos de nuvem definem o tipo de implantação de recursos de nuvem. Os três principais modelos de nuvem são: privado, público e híbrido.
-⦁	Nuvem privada
-Uma nuvem privada é fornece serviços de TI pela Internet usada por uma única entidade. A nuvem privada fornece um controle muito maior para a empresa e o departamento de TI. A nuvem privada pode ser hospedada em seu datacenter local ou em um datacenter dedicado externo, até mesmo por terceiros que tenham dedicado esse datacenter à sua empresa.
-Ela tem mais custos e menos benefícios em relação a uma implantação de nuvem pública. 
+SaaS (Software como Serviço) O SaaS (software como serviço) é o modelo de serviço de nuvem mais completo do ponto de vista do produto. Com o SaaS, você está essencialmente alugando ou usando um aplicativo totalmente desenvolvido. Email, software financeiro, aplicativos de mensagens e software de conectividade são exemplos comuns de uma implementação de SaaS. Alguns cenários comuns de SaaS são: ⦁ Email e mensagens. ⦁ Aplicativos de produtividade empresarial. ⦁ Controle de finanças e despesas.
 
-⦁	Nuvem pública
-Uma nuvem pública é criada, controlada e mantida por um provedor de nuvem de terceiros. Com uma nuvem pública, qualquer pessoa que queira comprar serviços de nuvem pode acessar e usar os recursos. A disponibilidade pública geral é uma diferença fundamental entre nuvens públicas e privadas.
-
-⦁	Nuvem híbrida
-Uma nuvem híbrida usa nuvens públicas e privadas em um ambiente interconectado. Um ambiente de nuvem híbrida pode ser usado para permitir que uma nuvem privada escale para atender a uma demanda maior temporária implantando recursos de nuvem pública. A nuvem híbrida pode ser usada para fornecer uma camada adicional de segurança. Por exemplo, os usuários podem escolher com flexibilidade quais serviços manter na nuvem pública e quais implantar na infraestrutura de nuvem privada.
-
-⦁	Várias nuvens
-Um quarto cenário, é um cenário de várias nuvens. Em um cenário de várias nuvens, você usa vários provedores de nuvem pública. Em um ambiente de várias nuvens, você lida com dois (ou mais) provedores de nuvem pública e gerencia recursos e segurança em ambos os ambientes.
-
-Azure Arc
-O Azure Arc é um conjunto de tecnologias que ajuda a gerenciar seu ambiente de nuvem. O Azure Arc pode ajudar a gerenciar o seu ambiente de nuvem, seja uma nuvem pública exclusivamente no Azure, uma nuvem privada em seu datacenter, uma configuração híbrida ou até mesmo um ambiente de várias nuvens em execução em vários provedores de nuvem ao mesmo tempo.
-Solução VMware no Azure
-Se você já estiver estabelecido com o VMware em um ambiente de nuvem privada, mas quiser migrar para uma nuvem pública ou híbrida a Solução VMware no Azure permite executar suas cargas de trabalho do VMware no Azure com integração e escalabilidade total.
-Modelo baseado em consumo
-Ao comparar modelos de infraestrutura de TI, há dois tipos de despesas a serem consideradas. CapEx (despesas de capital) e OpEx (despesas operacionais).
-⦁	CapEx (despesas de capital) 
-É uma despesa inicial única para comprar ou proteger recursos tangíveis. Um prédio novo, a repavimentação do estacionamento, a construção de um datacenter ou a compra de um veículo da empresa são exemplos de CapEx.
-⦁	OpEx (despesas operacionais)
-É o gasto de capital em serviços ou produtos ao longo do tempo. O aluguel de um centro de convenções, o leasing de um veículo da empresa ou a assinatura de serviços de nuvem são exemplos de OpEx.
-A computação em nuvem se enquadra na OpEx porque opera em um modelo baseado em consumo, você não paga pela infraestrutura física, pela eletricidade, pela segurança nem por nada que esteja associado à manutenção de um datacenter. Você paga pelos recursos de TI que usa. Se você não usar nenhum recurso de TI durante o mês, não pagará nada.
-Benefícios:
-⦁	Sem custos prévios.
-⦁	Não há necessidade de comprar nem gerenciar uma infraestrutura cara que os usuários talvez não usem na capacidade máxima.
-⦁	A capacidade de pagar para obter mais recursos quando necessário.
-⦁	A capacidade de parar de pagar por recursos que não são mais necessários.
-⦁	Com um datacenter tradicional, você tenta estimar as necessidades futuras de recursos. Se você superestimar, gastará mais do que o necessário no datacenter, podendo desperdiçar capital. Se você subestimar, o datacenter atingirá a capacidade rapidamente e os aplicativos e serviços poderão sofrer redução de desempenho. A correção de um datacenter subprovisionado pode ser muito demorada. Pode ser necessário solicitar, receber e instalar mais hardware. Você também precisará adicionar energia, resfriamento e rede para o hardware extra.
-⦁	Comparar os modelos de preços de nuvem
-⦁	Computação em nuvem é a entrega de serviços de computação pela Internet, usando o modelo de preço pago conforme o uso. Normalmente, você paga apenas pelos serviços de nuvem que usa, o que ajuda a:
-⦁	Planeje e gerencie os custos operacionais.
-⦁	Executar a infraestrutura com mais eficiência.
-⦁	Escale as operações de acordo com as necessidades de negócios.
-Em outras palavras, a computação em nuvem é uma forma de alugar capacidade computacional e armazenamento do datacenter de terceiros. Você pode tratar os recursos de nuvem como faria com os recursos em seu próprio datacenter. Mas, ao contrário do seu próprio datacenter, ao terminar de usar os recursos de nuvem, basta devolvê-los. Você é cobrado apenas pelo que usa.
-Em vez de manter CPUs e armazenamento no seu datacenter, você aluga esses recursos pelo tempo necessário. O provedor em nuvem é responsável por manter a infraestrutura subjacente para você. A nuvem permite que você supere rapidamente os desafios empresariais mais difíceis e ofereça soluções de ponta para seus usuários.
-
-Fonte: https://learn.microsoft.com/pt-br/training/modules/describe-cloud-compute/2-introduction-cloud-compute
+Modelo de responsabilidade compartilhada O modelo de responsabilidade compartilhada se aplica a todos os tipos de serviço de nuvem. Dependendo da configuração, você ou o provedor de nuvem pode ser responsável pelas configurações de rede e a conectividade no ambiente de nuvem, a segurança da rede e do aplicativo e a infraestrutura de diretório ⦁ IaaS, basicamente o hardware é alugado em um datacenter de nuvem, mas cabe a você decidir o que fazer com ele. ⦁ PaaS divide a responsabilidade entre você e o provedor de nuvem. O provedor de nuvem é responsável por manter a infraestrutura física e o acesso à Internet, como no IaaS. No modelo de PaaS, o provedor de nuvem também mantém os sistemas operacionais, os bancos de dados e as ferramentas de desenvolvimento. Pense no PaaS como o uso de um computador conectado ao domínio: o departamento de TI mantém o dispositivo com atualizações, patches e renovações regulares. ⦁ SaaS é o modelo que coloca a maior responsabilidade sobre o provedor de nuvem e a menor responsabilidade com o usuário. Em um ambiente de SaaS, você é responsável pelos dados que coloca no sistema, pelos dispositivos que permite que se conectem ao sistema e pelos usuários que têm acesso. Quase todo o resto é responsabilidade do provedor de nuvem. O provedor de nuvem é responsável pela segurança física dos datacenters, pela energia, pela conectividade de rede e pelo desenvolvimento e aplicação de patch dos aplicativos.
